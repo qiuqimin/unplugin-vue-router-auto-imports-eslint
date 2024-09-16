@@ -1,0 +1,8 @@
+{
+  "globals": {
+    "onBeforeRouteLeave": true,
+    "onBeforeRouteUpdate": true,
+    "useRoute": true,
+    "useRouter": true
+  }
+}
