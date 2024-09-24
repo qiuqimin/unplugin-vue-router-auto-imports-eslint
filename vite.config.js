@@ -8,6 +8,8 @@ import AutoImport from 'unplugin-auto-import/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 
+import Layouts from 'vite-plugin-vue-layouts'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -16,6 +18,9 @@ export default defineConfig({
     }),
     // ⚠️ Vue must be placed after VueRouter()
     vue(),
+    Layouts({
+      pagesDirs: 'src/views'
+    }),
     AutoImport({
       imports: [VueRouterAutoImports],
       eslintrc: {
